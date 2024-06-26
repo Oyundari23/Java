@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript-solutions</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+  </head>
+  <body>
+    <main>
+      <input id="input" placeholder="Enter value..." />
+      <button onclick="run();">solve</button>
+      <pre>
+         <code id="result"></code>
+        </pre>
+    </main>
+    <script>
+      function run() {
+        const n = getNumberValueFromInput();
+        const result = multipleTable(n);
+        print(result);
+      }
+      function multipleTable(n) {
+        let result = "";
+        for (let i = 1; i <= n; i++) {
+          result = result + generateStars(i);
+          result = result + "\n";
+        }
+        return result;
+      }
+      function generateStars(p) {
+        let result = "";
+        for (let p = p-1; p<=n; p++){
+          result = result + generateStars (p)
+          result = result + "\n";
+        }
+        return result;
+      }
+      function generateStars(numberOfStars) {
+        let stars = "";
+        for (let i = 0; i < numberOfStars; i++) {
+          stars = stars + "* ";
+        }
+        return stars;
+      }
+      function getNumberValueFromInput() {
+        const inputString = document.getElementById("input").value;
+        const n = String(inputString);
+        return n;
+      }
+      function print(result) {
+        document.getElementById("result").innerText = result;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+problem: 2 toonii ih bagiig olj hevlene uu
+code: 
+a,b  huvisagch zarlana 
+a,b variable utga assign hiih
+a huvisagchig b huvisagchtai haritsuulah 
+ihiig ni hevleh
+
+3 toonii ihiig oloh
+1. a b c 3 huvisgch zarlana 
+2. a b c utga assign hiih
+3. a huvisagchiig b tai haritsuulah 
+4. a huvisagchiig c tai haritsuulah 
+5. b huvisagchiig c tai haritsuulna 
+6. a ih bol a-g hevlene 
+7. b ih bol b-g hevlene 
+8. c ih bol c-g hevlene 
+
+3 tooonii ihiig olj hevlene uu 
+1. a b c 3 huvisagch zarlana 
+2. a b c 3 huvisagchid utga assign hiine 
+3. a huvisagchiig b-tei hariltsuulna 
+4. hervee a huvisagch ih bol c-tei haritsuulna 
+5. a huvisagch ih bol hevlene. 
+6. 
+8. 
+9. 
+
+4 toonii 2 dah ih toog oloh 
+1. A B C D 4 huvisagch zarlana 
+2. A B C D 4 huvisagchid utga assign hiine 
+3. comparing variable A to variable B
+4. If variable A is more than variable B 
+5. comparing variable A to variable C
+6. If variable A is more than variable C
+7. comparing A variable to variable D
+8. If variable A is less than variable D
+9. print variable A
+10. comparing variable B to variable A
+11. If variable B is more than variable A
+12. comparing variable B to variable C
+13. If variable B is more than variable C
+13. comparing B variable to D variable
+14. If variable B is less than variable D
+15. print variable B
+16. comparing variable C to variable A
+17. If variable C is more than variable A
+18. comparing variable C to variable B
+19. If variable C is more than variable B
+20. comparing C variable to variable D
+21. If variable C is less than variable D
+22. print variable C
+23. comparing variable D to variable A
+24. If variable D is more than variable A
+25. comparing variable D to variable B
+26. If variable D is more than variable B
+27. comparing D variable to variable C
+28. If variable D is less than variable C
+29. print variable D
+
+
+Өгөгдсөн А он өндөр жил мөн үү? 4т хуваагддаг, 100 болон 400д хуваагдахгүй 
+1. Y utga zarlan
+2. Y utgiig 4t huvaan 
+3. Hervee buhel too garval 
+4. Undur jil mun 
+5. Y utgiig 100 huvaana 
+6. Hervee butarhai too garval 
+7. Undur jil mun
+   Y utgiig 400 huvaan 
+    Hervee buhel too гарвал 
+   Өндөр жил мөн 
+8. Y утгыг хэвлэнэ
+9. 
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+

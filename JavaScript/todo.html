@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="input" />
+    <button onclick="addTask();">Add task</button>
+    <script>
+      const headingEl = document.getElementById("title");
+      headingEl.innerText = "World";
+      console.log(headingEl.innerText);
+      const texts = document.getElementByClassName("text");
+      texts[0].innerText = "How are you?";
+
+      const content = document.getElementsById("content");
+      content.innerHTML = "";
+      function addTask() {
+        const input = document.getElementById("input");
+        console.log(input.value);
+        const newTask = `
+            <div class="task">
+                <div class="task-text">
+                ${input.value} 
+                </div>
+                </div>`;
+        content.innerText = content.innerHTML + newTask;
+      }
+    </script>
+  </body>
+</html>

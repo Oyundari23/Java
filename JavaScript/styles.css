@@ -1,0 +1,26 @@
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    width: min (100vh 100vw);
+    height: min (100vh 100vw);
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blueviolet;
+}
+
+.box-1:nth-child(odd) {
+    background-color: white; 
+
+}
+.box-1:nth-child(even) {
+    background-color: black;
+  
+}   
+.box-2:nth-child(odd) {
+    background-color: black; 
+
+}
+.box-2:nth-child(even) {
+    background-color: white;
+}   

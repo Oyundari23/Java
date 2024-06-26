@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript-solutions</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+  </head>
+  <body>
+    <main>
+      <input id="input" placeholder="Enter value..." />
+      <button onclick="run();">solve</button>
+      <pre>
+         <code id="result"></code>
+        </pre>
+    </main>
+    <script>
+      function run() {
+        const n = getNumberValueFromInput();
+        const result = multiTable(n);
+        print(result);
+      }
+      function multiTable(n) {
+        let result = "";
+        for (let k = 1; k <= n; k++) {
+          for (let i = 1; i <= n; i++) {
+            const value = String(i * k);
+            result += value.padStart(3, " ") + " ";
+          }
+          result = result + "\n";
+        }
+        return result;
+      }
+      function getNumberValueFromInput() {
+        const inputString = document.getElementById("input").value;
+        const n = Number(inputString);
+        return n;
+      }
+      function print(result) {
+        document.getElementById("result").innerText = result;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript-solutions</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+  </head>
+  <body>
+    <main>
+      <button onclick="console.log(sumOfNumbers (n, m));">Restart</button>
+      <pre>
+         <code id="output"></code>
+        </pre>
+    </main>
+    <script>
+      function sumOfNumbers() {
+        const n = Number(prompt ("n toonii utga")) 
+        const m = Number(prompt ("m toonii utga")) 
+        let sum = 0;
+        for (let i = n; i <= m; i++) {
+          sum = sum + i;
+        }
+        alert (sum);
+      }
+
+     
+    //   function sumOfNumbers(a, b) {
+    //     const sum = a + b;
+    //     console.log(sum);
+    //   }
+      const sumOf3to9 = sumOfNumbers(3, 9);
+    
+    //   console.log(sumOfNumbers(3, 9));
+    //   alert(sumOf3to9);
+      document.getElementById("output").innerText = sumOf3to9;
+    </script>
+    
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fibonacci(n) {
+            const list = [];
+            for (let i =0; i<n; i++) {
+                if (i===0 ) {
+                    list.push (0);
+        } else if (i===1) {
+        list.push (1);
+        }
+        else {
+        const newItem = list [i-1]+list [i-2];
+        list.push(newItem);
+        }
+    }
+    return list; 
+}
+console.log (fibonacci(1));
+console.log (fibonacci(2));
+console.log (fibonacci(3));
+console.log (fibonacci(10));
+console.log (fibonacci(20));
+    </script>
+</body>
+</html>

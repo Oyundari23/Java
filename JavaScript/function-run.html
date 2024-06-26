@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript-solutions</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css" />
+  </head>
+  <body>
+    <main>
+      <input id="input" placeholder="Enter value..."/>
+      <button onclick="run();"> solve </button>
+      <pre>
+         <code id="output"></code>
+        </pre>
+    </main>
+    <script>
+      function run() {
+        const n = getNumberValueFromInput ();
+        const sum = sumOfNumbers (n);
+        print (sum);
+      }
+      function sumOfNumbers (n) {
+        let sum = 0;
+        for (let i = 1; i <= n; i++ ) ; {
+            sum = sum + 1;
+        }
+        return sum;
+      }
+     function getNumberValueFromInput () {
+        const inputString = document.getElementById ("input").value;
+        const n = Number (inputString);
+        return n ;
+    }
+    function print (output) {
+        document.getElementById ("output").innerText = output ;
+    }
+    </script>
+  </body>
+</html>
